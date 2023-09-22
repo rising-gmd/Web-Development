@@ -1,0 +1,186 @@
+:root {
+  --moderateViolet: hsl(263, 55%, 52%);
+  --moderateGrayishBlue: hsl(217, 19%, 35%);
+  --blackishBlue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --lightGray: hsl(0, 0%, 81%);
+  --lightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background-color: var(--lightGrayishBlue);
+}
+
+h1 {
+  margin-left: 1rem;
+}
+
+.parentContainer {
+  display: grid;
+  gap: 1.5rem;
+  width: 98%;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 1100px) {
+
+  .parentContainer {
+      grid-template-columns: repeat(4, 1fr);
+  }
+
+  .itemGlobal:first-child {
+      grid-column: 1 / span 2;
+  }
+
+  .itemGlobal:nth-child(3) {
+      grid-row-start: 1 / 2;
+  }
+
+  .itemGlobal:nth-child(4) {
+      grid-column: 2 / span 2;
+  }
+
+  .itemGlobal:last-child {
+      grid-row: 1 / span 2;
+      grid-column-start: 4;
+  }
+
+}
+
+@media screen and (max-width: 1100px) {
+
+  .parentContainer {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .itemGlobal:first-child {
+      grid-column: 1 / span 2;
+  }
+
+  .itemGlobal:nth-child(4) {
+      grid-column: span 2;
+  }
+
+  .itemGlobal:last-child {
+      grid-column: span 2;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .parentContainer {
+      grid-template-columns: 1fr;
+  }
+
+  .itemGlobal:nth-child(2) {
+      grid-column: span 2;
+  }
+
+  .itemGlobal:nth-child(3) {
+      grid-column: span 2;
+  }
+
+}
+
+.itemGlobal {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--lightGrayishBlue) / 0.25);
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+}
+
+.aboutContainer p {
+  margin: 0;
+}
+
+.lightAuthor,
+.verified {
+  color: var(--white);
+}
+
+.verified {
+  padding-top: 4px;
+  opacity: 50%;
+}
+
+.darkVerfied {
+  color: var(--blackishBlue);
+  opacity: 50%;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 42px;
+}
+
+.imageWithBorder {
+  border: 3px solid var(--moderateViolet);
+}
+
+.imageWithoutBorder {
+  width: 42px;
+  height: 42px;
+  border-radius: 42px;
+}
+
+.lightTitle {
+  color: var(--white);
+}
+
+.review {
+  opacity: 70%;
+}
+
+.danielReivew {
+  color: var(--white);
+}
+
+.jonathanReivew,
+.patrickReview {
+  color: var(--lightGray);
+}
+
+.jeanetteReview,
+kiraReview {
+  color: var(--blackishBlue);
+}
+
+
+
+.item1 {
+  background-image: url(images/bg-pattern-quotation.svg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: 80% 0%;
+  background-size: 128px auto;
+  background-color: var(--moderateViolet);
+}
+
+.item2 {
+  background-color: var(--moderateGrayishBlue);
+}
+
+.item3,
+
+.item5 {
+  background-color: var(--white);
+}
+
+.item4 {
+  background-color: var(--blackishBlue);
+}
