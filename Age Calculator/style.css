@@ -23,6 +23,36 @@ body {
   padding: 0;
 }
 
+@media screen and (min-width: 401px) and (max-width: 615px) {
+
+  .formContainer {
+    justify-content: center;
+  }
+
+  .ageContainer {
+    max-width: 450px;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  .ageContainer {
+    max-width: 375px;
+  }
+
+  .formContainer {
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+
+  .statTitle,
+  .showCount {
+    font-size: 40px !important;
+  }
+
+}
+
 .parent {
   width: 100vw;
   height: 100vh;
