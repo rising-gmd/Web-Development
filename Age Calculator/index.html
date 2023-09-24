@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="javascript.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Barlow:wght@500;600&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+  <title>Age Calculator</title>
+</head>
+
+<body>
+
+  <div class="parent">
+    <div class="ageContainer">
+
+      <div class="formContainer">
+        <div>
+          <label class="dateLabelError" for="date">DAY</label><br>
+          <input type="text" name="date" class="date" id="date" placeholder="DD">
+          <p class="dateError">Enter a valid date</p>
+        </div>
+
+        <div>
+          <label class="monthLabelError" for="month">MONTH</label><br>
+          <input type="text" name="month" class="month" id="month" placeholder="MM">
+          <p class="monthError">Enter a valid month</p>
+        </div>
+
+        <div>
+          <label class="yearLabelError" for="year">YEAR</label><br>
+          <input type="text" name="year" class="year" id="year" placeholder="YYYY">
+          <p class="yearError">Enter a valid year</p>
+        </div>
+
+        <button id="calculate">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 46 44">
+            <g fill="none" stroke="#FFF" stroke-width="2.2">
+              <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+            </g>
+          </svg>
+        </button>
+
+      </div>
+
+      <div class="statsContainer">
+
+        <div class="compStat">
+          <div class="showYear">
+            <div class="dash"></div>
+            <div class="dash"></div>
+          </div>
+          <h1 class="statTitle">years</h1>
+        </div>
+
+        <div class="compStat">
+          <div class="showMonth">
+            <div class="dash"></div>
+            <div class="dash"></div>
+          </div>
+          <h1 class="statTitle">months</h1>
+        </div>
+
+        <div class="compStat">
+          <div class="showDay">
+            <div class="dash"></div>
+            <div class="dash"></div>
+          </div>
+          <h1 class="statTitle">days</h1>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
