@@ -24,7 +24,6 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -41,6 +40,7 @@ p {
   border-radius: 14px;
   padding: 12px;
   background-color: var(--white);
+  margin-top: 20px;
 }
 
 .steps {
@@ -63,11 +63,16 @@ p {
   body {
     margin: 0;
     padding: 0;
+
     background-color: var(--pastelBlue);
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
   }
 
   .formParentWrapper {
@@ -77,6 +82,7 @@ p {
     min-height: 520px;
     border-radius: 14px;
     padding: 0;
+    margin-top: 0px;
     background-color: var(--pastelBlue) !important;
   }
 
@@ -102,7 +108,7 @@ p {
 
   .rightSectionParent {
     position: absolute;
-    top: 100px;
+    top: 82px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -129,7 +135,7 @@ p {
   }
 
   .info {
-    display: none !important;
+    display: none;
   }
 
   .btnWrapper {
